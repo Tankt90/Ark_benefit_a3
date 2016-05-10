@@ -1,5 +1,5 @@
-# android_device_elephone_trunk
-CyanogenMod 13.0 device tree for Elephone Trunk
-If you're looking for the 32 bit version, check the -32 branch.
+# android_device_ark_benefit
+CyanogenMod 13.0 device tree for ark_benefit
 
 Major credits to mdeejay!
+Major credits to ottmi!
