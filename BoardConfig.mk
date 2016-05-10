@@ -17,7 +17,7 @@
 
 -include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/elephone/trunk
+DEVICE_PATH := device/ark/benefit
 
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
@@ -40,14 +40,14 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 #TARGET_KERNEL_SOURCE := kernel/msm-3.10
 #ifneq ($(FORCE_32_BIT),true)
-#TARGET_KERNEL_CONFIG := cyanogenmod_trunk_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_ark-64_defconfig
 #else
-#TARGET_KERNEL_CONFIG := cyanogenmod_trunk_defconfig
+#TARGET_KERNEL_CONFIG := cyanogenmod_ark_defconfig
 #endif
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/elephone/trunk
-TARGET_KERNEL_CONFIG := cyanogenmod_trunk_defconfig
+TARGET_KERNEL_SOURCE := kernel/ark/benefit
+TARGET_KERNEL_CONFIG := cyanogenmod_benefit_defconfig
 
 # Bluetooth 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -96,9 +96,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/elephone/trunk/sepolicy
+    device/ark/benefit/sepolicy
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/elephone/trunk/BoardConfigVendor.mk
+-include vendor/ark/benefit/BoardConfigVendor.mk
