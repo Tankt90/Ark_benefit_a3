@@ -19,13 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from Elephone Trunk device
-$(call inherit-product, device/elephone/trunk/device.mk)
+$(call inherit-product, device/ark/benefit/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := trunk
-PRODUCT_NAME := full_trunk
-PRODUCT_BRAND := Elephone
-PRODUCT_MODEL := Elephone trunk
-PRODUCT_MANUFACTURER := elephone
+PRODUCT_DEVICE := benefit
+PRODUCT_NAME := full_benefit
+PRODUCT_BRAND := ARK
+PRODUCT_MODEL := Benefit A3
+PRODUCT_MANUFACTURER := ark
 
 
