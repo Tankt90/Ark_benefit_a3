@@ -1,3 +1,3 @@
 #used to add device to CM's lunch
-add_lunch_combo cm_trunk-eng
-add_lunch_combo cm_trunk-userdebug
+add_lunch_combo cm_benefit-eng
+add_lunch_combo cm_benefit-userdebug
