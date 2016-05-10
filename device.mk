@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/elephone/trunk/trunk-vendor.mk)
+$(call inherit-product-if-exists, vendor/ark/benefit/benefit-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/trunk-releasekey
+    $(LOCAL_PATH)/benefit-releasekey
 
 # Add libboringssl-compat.so to provide BIO_f_base64
 TARGET_REQUIRES_B64_COMPAT = true
